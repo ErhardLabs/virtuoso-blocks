@@ -11,10 +11,13 @@ $image = get_field('logo');
 $button = get_field('buttons');
 ?>
 
-<div class="front_page_top_wrap welcome">
+<div class="virtuoso-block front_page_top_container welcome">
+    <div class="front_page_top_wrap">
+
   <div class="image_wrap">
     <img src="<?php echo $image?>"/>
   </div>
+
   <h1><?php bloginfo('title'); ?></h1>
   <h4><?php bloginfo('description');?></h4>
   <div class="button_container">
@@ -30,5 +33,6 @@ $button = get_field('buttons');
 
     <?php endwhile; ?>
 
-  </div>
+      </div>
+    </div>
 </div>

@@ -7,7 +7,7 @@
  */
 
 ?>
-<div class="latest_posts">
+<div class="virtuoso-block latest_posts">
   <h2><?php echo get_field('header');?></h2>
   <?php new \Virtuoso\Lib\Components\Latest_Posts(); ?>
 </div>

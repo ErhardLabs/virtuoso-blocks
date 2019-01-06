@@ -11,7 +11,7 @@ $socialMediaLinks = get_field('social_media_links');
 $bioText = get_field('bio_text');
 
 ?>
-<div class="bio_wrap">
+<div class="virtuoso-block bio_wrap">
   <div class="image_wrap">
     <img src="<?php echo $image ?>"/>
   </div>

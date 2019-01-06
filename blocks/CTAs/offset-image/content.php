@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="offset_image">
+<div class="virtuoso-block offset_image">
   <?php $image = get_field('image'); ?>
   <?php $title = get_field('title'); ?>
   <?php $text = get_field('text'); ?>
