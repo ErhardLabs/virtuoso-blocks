@@ -15,8 +15,8 @@
   <?php $link = $button['link']; ?>
   <?php $buttonText = $button['text']; ?>
   <?php $icon = $button['icon']; ?>
-  <section>
-    <img src="<?php echo $image ?>"/>
+  <section style="background-image: url('<?php echo $image ?>');">
+<!--      <img src="--><?php //echo $image ?><!--"/>-->
     <div class="section_info">
       <h2><?php echo $title ?></h2>
       <p><?php echo $text?></p>

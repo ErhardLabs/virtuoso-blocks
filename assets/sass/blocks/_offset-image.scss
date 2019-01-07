@@ -1,3 +1,18 @@
 .virtuoso-block.offset_image {
+  position: relative;
 
+  section {
+    width: 80%;
+    min-height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media-query('med') {
+      height: 600px;
+    }
+  }
+
+  .section_info {
+    position: absolute;
+  }
 }
