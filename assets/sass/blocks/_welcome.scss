@@ -1,3 +1,14 @@
 .virtuoso-block.welcome {
   height: 90vh;
+
+  .front_page_top_wrap {
+    @include media-query('med') {
+      margin-top: 20vh;
+    }
+  }
+
+  .heading_wrap {
+    text-align: center;
+  }
+
 }
