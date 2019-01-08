@@ -1,7 +1,11 @@
 .virtuoso-block.welcome {
-  height: 90vh;
 
   .front_page_top_wrap {
+    height: 60vh;
+
+    @include media-query('sm') {
+      height: auto;
+    }
     @include media-query('med') {
       margin-top: 20vh;
     }

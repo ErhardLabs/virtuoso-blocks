@@ -15,12 +15,16 @@
   <?php $link = $button['link']; ?>
   <?php $buttonText = $button['text']; ?>
   <?php $icon = $button['icon']; ?>
-  <section style="background-image: url('<?php echo $image ?>');">
-<!--      <img src="--><?php //echo $image ?><!--"/>-->
-    <div class="section_info">
-      <h2><?php echo $title ?></h2>
-      <p><?php echo $text?></p>
-      <a class="button" href="<?php echo $link?>"><?php echo $buttonText ?></a>
+  <section>
+      <div class="section_image">
+        <img src="<?php echo $image ?>"/>
+      </div>
+    <div class="section_info" style="background-image: url('<?php echo $image ?>')">
+        <div class="section_info_wrap">
+          <h2><?php echo $title ?></h2>
+          <p><?php echo $text?></p>
+          <a class="button" href="<?php echo $link?>"><?php echo $buttonText ?></a>
+        </div>
     </div>
   </section>
 </div>
