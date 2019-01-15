@@ -8,7 +8,7 @@
     display: block;
     margin: 0 0 0 -20px;
 
-    @include media-query('med') {
+    @include media-query('lg') {
       display: flex;
     }
 
@@ -32,7 +32,7 @@
         display: flex;
       }
 
-      @include media-query('med') {
+      @include media-query('lg') {
         display: block;
       }
     }
@@ -45,7 +45,7 @@
       width: 33%;
     }
 
-    @include media-query('med'){
+    @include media-query('lg'){
       width: 100%;
     }
 
@@ -64,7 +64,7 @@
         border-radius: 4px 0 0 4px;
       }
 
-      @include media-query('med') {
+      @include media-query('lg') {
         height: 200px;
         border-radius: 4px 4px 0 0;
       }
@@ -82,7 +82,7 @@
       width: 66%;
     }
 
-    @include media-query('med'){
+    @include media-query('lg'){
       width: 100%;
     }
   }
