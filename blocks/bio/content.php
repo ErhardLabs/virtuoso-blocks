@@ -32,4 +32,3 @@ $bioText = get_field('bio_text');
       </div>
     </div>
 </div>
-<?php
