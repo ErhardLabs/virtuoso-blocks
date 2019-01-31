@@ -15,6 +15,7 @@
   <?php $link = $button['link']; ?>
   <?php $buttonText = $button['text']; ?>
   <?php $icon = $button['icon']; ?>
+  <?php $customClasses = $button['custom_classes']; ?>
   <section>
       <div class="section_image">
         <img src="<?php echo $image ?>"/>
@@ -23,7 +24,7 @@
         <div class="section_info_wrap">
           <h2><?php echo $title ?></h2>
           <p><?php echo $text?></p>
-          <a class="button" href="<?php echo $link?>"><?php echo $buttonText ?></a>
+          <a class="button <?php echo $customClasses ?>" href="<?php echo $link?>"><?php echo $buttonText ?></a>
         </div>
     </div>
   </section>
