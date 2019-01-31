@@ -7,15 +7,17 @@
  */
 ?>
 
-<div class="virtuoso-block offset_image">
-  <?php $image = get_field('image'); ?>
-  <?php $title = get_field('title'); ?>
-  <?php $text = get_field('text'); ?>
-  <?php $button = get_field('button'); ?>
-  <?php $link = $button['link']; ?>
-  <?php $buttonText = $button['text']; ?>
-  <?php $icon = $button['icon']; ?>
-  <?php $customClasses = $button['custom_classes']; ?>
+<?php $image = get_field('image'); ?>
+<?php $title = get_field('title'); ?>
+<?php $text = get_field('text'); ?>
+<?php $button = get_field('button'); ?>
+<?php $anchor_id = get_field('anchor_id'); ?>
+<?php $link = $button['link']; ?>
+<?php $buttonText = $button['text']; ?>
+<?php $icon = $button['icon']; ?>
+<?php $customClasses = $button['custom_classes']; ?>
+
+<div id="<?php echo $anchor_id; ?>" class="virtuoso-block offset_image">
   <section>
       <div class="section_image">
         <img src="<?php echo $image ?>"/>
