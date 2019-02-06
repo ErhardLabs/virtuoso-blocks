@@ -3,7 +3,7 @@
 /**
  * Block Name: Welcome
  *
- * This is the template that displays the testimonial block.
+ * This is the template that displays the welcome block.
  */
 
 $button = get_field('buttons');
