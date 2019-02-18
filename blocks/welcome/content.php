@@ -6,14 +6,15 @@
  * This is the template that displays the welcome block.
  */
 
+$image = get_field('logo');
 $button = get_field('buttons');
 ?>
 
 <div class="virtuoso-block front_page_top_container welcome">
     <div class="front_page_top_wrap">
         <div class="heading_wrap">
-          <div class="image_wrap"><img alt="logo" src="<?php echo get_site_icon_url()?>"/></div>
-          <h1><?php bloginfo('title'); ?></h1>
+          <div class="image_wrap"><img alt="logo" src="<?php echo ($image != '')?$image: get_site_icon_url()?>"/></div>
+            <h1><?php bloginfo('title'); ?></h1>
           <h4><?php bloginfo('description');?></h4>
         </div>
       <div class="button_container">

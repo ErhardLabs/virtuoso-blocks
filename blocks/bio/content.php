@@ -13,9 +13,11 @@ $bioText = get_field('bio_text');
 ?>
 <div class="virtuoso-block bio_container bio">
     <div class="bio_wrap">
+        <?php if ($image): ?>
       <div class="image_wrap">
         <img src="<?php echo $image ?>"/>
       </div>
+        <?php endif; ?>
       <div class="social_media_wrap">
         <?php
 
