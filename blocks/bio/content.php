@@ -13,7 +13,7 @@ $bioText = get_field('bio_text');
 
 ?>
 <div class="virtuoso-block bio_container bio">
-    <div class="bio_wrap">
+    <div class="bio_wrap wrap">
 	    <?php if ($bioTitle): ?>
         <h2><?php echo $bioTitle; ?></h2>
 		<?php endif; ?>
