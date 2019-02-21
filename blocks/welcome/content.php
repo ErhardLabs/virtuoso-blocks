@@ -20,12 +20,12 @@ $button = get_field('buttons');
       <div class="button_container">
 
         <?php while( have_rows('buttons') ): the_row(); ?>
-
           <?php $link = get_sub_field('link'); ?>
           <?php $text = get_sub_field('text'); ?>
           <?php $icon = get_sub_field('icon'); ?>
+          <?php $customClasses = get_sub_field('custom_classes'); ?>
           <div class='link_wrap'>
-            <a class="button" href="<?php echo $link ?>"><?php echo $text; ?> <?php echo $icon; ?></a>
+            <a class="button <?php echo $customClasses ?>" href="<?php echo $link ?>"><?php echo $text; ?> <?php echo $icon; ?></a>
           </div>
 
         <?php endwhile; ?>
