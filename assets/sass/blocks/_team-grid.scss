@@ -14,16 +14,20 @@
     }
 
     .team-member {
-      padding: 2em 10px 0 10px;
+      padding-top: 2em;
       flex: 1;
 
+      @include media-query('med'){
+        padding: 2em 10px 0 10px;
+      }
+
       .team-member_wrap {
-        width: 300px;
+        max-width: 300px;
         margin: 0 auto;
       }
 
       .image-wrap {
-        width: 300px;
+        max-width: 250px;
         margin: 0 auto;
       }
 
