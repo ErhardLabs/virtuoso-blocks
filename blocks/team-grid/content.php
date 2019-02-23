@@ -12,6 +12,7 @@
     <div class="wrap">
         <h2><?php echo get_field('team_title'); ?></h2>
         <div class="team-grid_wrap">
+            <?php if (have_rows('team_members')): ?>
             <?php while( have_rows('team_members') ): the_row(); ?>
             <div class="team-member">
                 <div class="team-member_wrap">
@@ -30,6 +31,7 @@
                 </div>
             </div>
             <?php endwhile; ?>
+            <?php endif; ?>
         </div>
     </div>
 </section>
