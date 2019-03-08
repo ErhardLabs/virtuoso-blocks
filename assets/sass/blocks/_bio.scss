@@ -1,10 +1,15 @@
 .virtuoso-block.bio {
   .image_wrap {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     margin: 2em auto;
     border-radius: 50%;
     box-shadow: 0px 10px 35px -5px rgba(219,219,219,1);
+
+    @include media-query('med') {
+      width: 250px;
+      height: 250px;
+    }
 
     img {
       position: relative;
