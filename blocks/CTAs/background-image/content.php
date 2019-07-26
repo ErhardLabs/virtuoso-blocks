@@ -16,7 +16,7 @@
 
 <div class="virtuoso-block cta_background_image" style="background-image:url(<?php echo esc_url($image); ?>">
   <section>
-    <div class="section_info" style="background-image: url('<?php echo $image ?>')">
+    <div class="section_info">
         <div class="section_info_wrap">
             <?php if($text): ?>
                 <h3><?php echo $text?></h3>
