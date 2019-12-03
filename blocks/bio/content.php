@@ -10,9 +10,10 @@ $bioTitle = get_field('bio_title');
 $image = get_field('image');
 $socialMediaLinks = get_field('social_media_links');
 $bioText = get_field('bio_text');
+$bioID = get_field('bio_id');
 
 ?>
-<div class="virtuoso-block bio_container bio">
+<div id="<?php echo $bioID; ?>" class="virtuoso-block bio_container bio">
     <div class="bio_wrap wrap">
 	    <?php if ($bioTitle): ?>
         <h2><?php echo $bioTitle; ?></h2>
