@@ -10,9 +10,9 @@
 <?php $image = get_field('call_to_action_background_image'); ?>
 <?php $text = get_field('call_to_action_text'); ?>
 <?php $button = get_field('call_to_action_button'); ?>
-<?php $link = $button['call_to_action_button_link']; ?>
-<?php $buttonText = $button['call_to_action_button_text']; ?>
-<?php $customClasses = $button['custom_classes']; ?>
+<?php $link = (isset($button['call_to_action_button_link'])) ? $button['call_to_action_button_link'] : ''; ?>
+<?php $buttonText = (isset($button['call_to_action_button_text'])) ? $button['call_to_action_button_text'] : ''; ?>
+<?php $customClasses = (isset($button['custom_classes'])) ? $button['custom_classes'] : ''; ?>
 
 <div class="virtuoso-block cta_background_image" style="background-image:url(<?php echo esc_url($image); ?>">
   <section>
